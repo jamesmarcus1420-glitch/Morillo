@@ -1,0 +1,12 @@
+$("#messageState").on("change", (x) => {
+  $(".message").removeClass("openNor").removeClass("closeNor");
+  if ($("#messageState").is(":checked")) {
+    $(".message").removeClass("closed").removeClass("no-anim").addClass("openNor");
+    $(".heart").removeClass("stopHer").removeClass("openedHer").addClass("openHer");
+    console.log("I Like You");
+  } else {
+    $(".message").removeClass("no-anim").addClass("closeNor");
+    $(".heart").removeClass("stopHer").removeClass("openHer").addClass("closeHer");
+    console.log("01010");
+  }
+});
